@@ -46,53 +46,80 @@
         </div>
     </nav>
 
-
     <section id="realEstate">
         <div class="container"></div>
     </section>
 
-
-    <section id="muestras">
-        <div class="container">
-            <div class="content-center">
-                <h2><b>Propiedades a la venta</b></h2>
-                <p>Estas son algunas de nuestras mejores propiedades, no dudes en consultar disponibilidad.</p>
-            </div>
-
-
-            <div class="container">
-                <div class="row m-5">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <img class="card-img-top" src="../assets/img/venta1.jpg" alt="Venta 1">
-                        <div class="card-body"> Roque Vazquez 842 </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <img class="card-img-top" src="../assets/img/venta2.jpg" alt="Venta 2">
-                        <div class="card-body"> Barrio DGI </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4" id="alquiler-tres">
-                        <img class="card-img-top" src="../assets/img/venta3.jpg" alt="Venta 3">
-                        <div class="card-body"> Mitre 326 </div>
-                    </div>
+    <div class="container">
+        <section class="mb-4">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contactanos!</h2>
+            <p class="text-center w-responsive mx-auto mb-4">Tenes alguna duda? No dudes en contactarnos! Nos
+                comunicaremos con vos a la brevedad.</p>
+            <div class="row">
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contacto-formulario">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" name="name" class="form-control">
+                                    <label for="name">Nombre</label>
+                                </div>
+                            </div>
+                            <div class\="col-md-6">
+                                <div class\="md-form mb-0">
+                                    <input type="text" name="email" class="form-control">
+                                    <label for="email">E-mail</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" name="subject" class="form-control">
+                                    <label for="subject">Observaciones</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" name="message" rows="3"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message">Tu mensaje</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center text-md-left">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 text-center text-primary">
+                    <ul class="list-unstyled mb-0">
+                        <li><i>
+                                <ion-icon name="location-outline" size="large"></ion-icon>
+                            </i>
+                            <p>Colombia 189, Junin</p>
+                        </li>
+                        <li><i>
+                                <ion-icon name="call-outline" size="large"></ion-icon>
+                            </i>
+                            <p>+549-236-4446924</p>
+                        </li>
+                        <li><i>
+                                <ion-icon name="mail-outline" size="large"></ion-icon>
+                            </i>
+                            <p>inmobiliariasanmiguel2020@gmail.com</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="container">
-                <div class="row m-5">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <img class="card-img-top" src="../assets/img/venta4.jpg" alt="Venta 4">
-                        <div class="card-body"> Carilo </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                        <img class="card-img-top" src="../assets/img/venta5.jpg" alt="Venta 5">
-                        <div class="card-body"> Cerrito Colorado </div>
-                    </div>
-                    <div class="col-12 col-sm1-2 col-md-6 col-lg-4" id="venta-tres">
-                        <img class="card-img-top" src="../assets/img/venta6.jpg" alt="Venta 6">
-                        <div class="card-body"> Gauchos Argentinos </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+        </section>
+    </div>
+
+
+
+
 
     <footer class="row p-5 bg-secondary text-white">
         <div class="col-12 d-none d-lg-block col-lg-4 ">
@@ -142,11 +169,10 @@
                 </div>
             </div>
         </div>
-   </footer>
+    </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
