@@ -1,0 +1,14 @@
+@mixin bordeGris(){
+    border: 1px solid gray;
+}
+
+@mixin textCenter(){
+    text-align: center;
+}
+
+
+@mixin celular (){
+    @media screen and (max-width: 992px){
+        @content;
+    }
+}

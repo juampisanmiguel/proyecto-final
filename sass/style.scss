@@ -1,5 +1,5 @@
-$white: #fff;
-$font-titillium: 'Titillium Web', sans-serif;
+@import "./mixins";
+@import "./variables";
 
 
 body{
@@ -7,7 +7,7 @@ body{
 }
 
 h2{
-    text-align: center;
+    @include textCenter();
     font-size: 48px;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -15,11 +15,11 @@ h2{
 }
 
 .iconos_footer{
-   color: $white;
+   color: map-get($colores,"blanco")
 }
 
 p{
-    text-align: center;
+    @include textCenter();
     color: #999;
 }
 
@@ -29,25 +29,25 @@ p{
 
 .card-img-top{
     height: 300px;
-    border: 1px solid gray;
+    @include bordeGris();
     border-bottom: none;
 }
 
 .card-body{
-    text-align: center;
+    @include textCenter();
     background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid gray;
+    @include bordeGris();
     border-top: none;
 }
 
 .navbar{
-    background-color: $white;
+    background-color: map-get($colores,"blanco");
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
     min-height: 60px;
 }
 
 .nav-link {
-    color: black;
+    color:map-get($colores,"negro");
 }
 
 .nav-logo{
@@ -58,46 +58,91 @@ p{
 
 .navbar-toggler{
     font-size: 40px;
-
 }
 
 
 #realEstate{
-    background-image: url(../assets/img/realEstate.jpg);
+    background-image: url(../assets/img/realEstate.webp);
     background-size: cover; 
     padding-top: 90px;
     min-height: 400px;
-    color: $white;
+    color: map-get($colores,"blanco");
 }
 
 
-@media screen and (max-width: 992px) {
+// @media screen and (max-width: 992px) {
 
-    .card-img-top{
-        height: 180px;
-    }
+//     .card-img-top{
+//         height: 180px;
+//     }
 
-    #alquiler-tres{
+//     #alquiler-tres{
+//         display: none;
+//     }
+
+//     #venta-tres{
+//         display: none;
+//     }
+
+//     #logo-footer{
+//         display: none;
+//     }
+
+//     #p_footer{
+//         display: none;
+//     }
+
+//     #redes-sociales{
+//         display: none;
+//     }
+
+//     #div-links{
+//         margin-bottom: 30px;
+//     }
+// }
+
+//APLICO MIXIN CON CONTENT PARA RESPONSIVE//
+
+.card-img-top{
+     @include celular(){
+          height: 180px;
+        }
+}
+
+.nav-logo{
+    @include celular(){
+        //  margin-left: 85px;
+         border-right: none;
+       }
+}   
+
+#alquiler-tres, #venta-tres, #logo-footer, #p_footer, #redes-sociales{
+    @include celular(){
         display: none;
-    }
+      }
+}
 
-    #venta-tres{
-        display: none;
-    }
-
-    #logo-footer{
-        display: none;
-    }
-
-    #p_footer{
-        display: none;
-    }
-
-    #redes-sociales{
-        display: none;
-    }
-
-    #div-links{
+#div-links{
+    @include celular(){
         margin-bottom: 30px;
     }
 }
+
+#realEstate{
+    @include celular(){
+        min-height: map-get($espaciado,"xlarge" );
+    }
+}
+
+#barraNavegacion{
+    @include celular(){
+         justify-content: center;
+       }
+}   
+
+// .hamburguesa{
+//     @include celular(){
+//         display: flex;
+//         justify-content: end;
+//        }
+// } 
