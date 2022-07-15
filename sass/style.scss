@@ -158,3 +158,10 @@ p{
          justify-content: center;
        }
 }
+
+*{
+    @include celular(){
+        margin: 0;
+        padding: 0;
+    }
+}

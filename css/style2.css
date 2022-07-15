@@ -87,3 +87,8 @@ p {
   .contenedorMuestra {
     display: flex;
     justify-content: center; } }
+
+@media screen and (max-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0; } }
