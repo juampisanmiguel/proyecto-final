@@ -136,13 +136,18 @@ p{
 
 #barraNavegacion{
     @include celular(){
-         justify-content: center;
+         justify-content: space-between;
        }
 }   
 
-// .hamburguesa{
-//     @include celular(){
-//         display: flex;
-//         justify-content: end;
-//        }
-// } 
+.cartaAlquiler{
+    @include celular(){
+         margin: 15px;
+       }
+}
+
+.card-title{
+    @include celular(){
+         font-size: map-get($espaciado,"xsmall");
+       }
+}
