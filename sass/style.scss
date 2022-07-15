@@ -152,3 +152,16 @@ p{
        }
 }
 
+footer{
+    @include celular(){
+         margin: 0;
+         padding: 0;
+       }
+}
+
+.contenedorMuestra{
+    @include celular(){
+         display: flex;
+         justify-content: center;
+       }
+}
