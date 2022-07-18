@@ -6,6 +6,7 @@ body{
     font-family: $font-titillium;
 }
 
+
 h2{
     @include textCenter();
     font-size: 3rem;
@@ -40,6 +41,10 @@ p{
     border-top: none;
 }
 
+.carta2{
+    @include bordeCeleste();
+}
+
 .navbar{
     background-color: map-get($colores,"blanco");
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
@@ -60,6 +65,17 @@ p{
     font-size: 40px;
 }
 
+#boton1{
+    margin-top: map-get($espaciado,"medium");
+}
+
+#boton2{
+    margin-top: map-get($espaciado,"medium");
+}
+
+#boton3{
+    margin-top: 4.6rem;
+}
 
 #realEstate{
     background-image: url(../assets/img/realEstate.webp);
