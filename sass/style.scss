@@ -16,8 +16,12 @@ h2{
 }
 
 .iconos_footer{
-   color: map-get($colores,"blanco")
+   color: map-get($colores,"blanco") 
 }
+
+.iconos_footer:hover {
+    transform: scale(1.1);
+  }
 
 p{
     @include textCenter();
