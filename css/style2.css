@@ -113,6 +113,11 @@ p {
     margin: 0;
     padding: 0; } }
 
+@media screen and (max-width: 992px) {
+  .miFooter {
+    margin-right: 0;
+    margin-left: 0; } }
+
 .testimonials-clean {
   color: #313437;
   background-color: #eef4f7; }

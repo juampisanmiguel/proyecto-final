@@ -192,7 +192,12 @@ p{
     }
 }
 
-
+.miFooter{
+    @include celular(){
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
 
 .testimonials-clean {
     color:#313437;
