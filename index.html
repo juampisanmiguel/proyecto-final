@@ -12,130 +12,125 @@
     <link rel="stylesheet" href="css/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/logo2.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container" id="barraNavegacion">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="nav-logo"
+                        data-aos="fade-right" alt="Logo Navbar"></a>
+                <div class="hamburguesa">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <ion-icon name="menu-outline" class="justify-content-end"></ion-icon>
+                    </button>
+                </div>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container" id="barraNavegacion">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" class="nav-logo" data-aos="fade-right"
-                    alt="Logo Navbar"></a>
-            <div class="hamburguesa">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <ion-icon name="menu-outline" class="justify-content-end"></ion-icon>
-                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" id="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/alquilar.html" id="alquilar">Alquilar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/comprar.html" id="comprar">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/about_us.html" id="aboutus">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html" id="contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html" id="home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/alquilar.html" id="alquilar">Alquilar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/comprar.html" id="comprar">Comprar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/about_us.html" id="aboutus">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html" id="contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <section id="realEstate" data-aos="zoom-out">
         <div class="container"></div>
     </section>
 
-    <!-- <section id="muestras">
-        <div class="container">
-            <div class="content-center">
-                <h2><b>Mucho mas que mudarte.</b></h2>
-                <p>Gestión Inmobiliaria Integral de todo tipo de Inmuebles: Casas, Departamentos, Locales Comerciales,
-                    Campos.</p>
-            </div>
-
-
-            <div class="container">
-                <div class="row m-5">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4" data-aos="fade-down">
-                        <img class="card-img-top" src="assets/img/alquiler1.jpg" alt="Alquiler 1">
-                        <div class="card-body">
-                            <h4 class="card-title">Sarmiento y newbery</h4>
-                            <p class="card-text">
-                                <b>Especificaciones de precio</b>
-                              </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4" data-aos="fade-down">
-                        <img class="card-img-top" src="assets/img/alquiler2.jpg" alt="Alquiler 2">
-                        <div class="card-body"> Quinta Barrio Real </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4" id="alquiler-tres" data-aos="fade-down">
-                        <img class="card-img-top" src="assets/img/alquiler3.jpg" alt="Alquiler 3">
-                        <div class="card-body"> Bto. de Miguel 400 </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row m-5">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4" data-aos="fade-down">
-                        <img class="card-img-top" src="assets/img/venta1.jpg" alt="Venta 1">
-                        <div class="card-body"> Roque Vazquez 842 </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4" data-aos="fade-down">
-                        <img class="card-img-top" src="assets/img/venta2.jpg" alt="Venta 2">
-                        <div class="card-body"> Barrio DGI </div>
-                    </div>
-                    <div class="col-12 col-sm1-2 col-md-6 col-lg-4" id="venta-tres" data-aos="fade-down">
-                        <img class="card-img-top" src="assets/img/venta3.jpg" alt="Venta 3">
-                        <div class="card-body"> Mitre 326 </div>
-                    </div>
-                </div>
-            </div>
-
-    </section> -->
 
 
     <!-- PRUEBAS PARA NUEVO INDEX -->
     <section class="container d-flex justify-content-center mb-3">
-     <div class="card-deck">
-        <div class="card">
-          <div class="card-body carta2">
-            <img src="assets/img/trabaja.png" class="card-title w-50 h-25">
-            <h4 class="card-title mt-3">Trabaja con nosotros</h4>
-            <p class="card-text">Si estas buscando trabajar en un ambiente cálido, con oportunidad de crecer y generar ingresos extra contactanos</p>
-            <button type="button" class="btn btn-outline-secondary" id="boton1">Quiero trabajar</button>
-          </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body carta2">
+                    <img src="assets/img/trabaja.png" class="card-title w-50 h-25">
+                    <h4 class="card-title mt-3">Trabaja con nosotros</h4>
+                    <p class="card-text">Si estas buscando trabajar en un ambiente cálido, con oportunidad de crecer y
+                        generar ingresos extra contactanos</p>
+                    <button type="button" class="btn btn-outline-secondary" id="boton1">Quiero trabajar</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body carta2">
+                    <img src="assets/img/vende.png" class="card-title w-75">
+                    <h4 class="card-title">Vende tu propiedad</h4>
+                    <p class="card-text mb-4">Contamos con el mejor asesoramiento para que puedas vender tu propiedad de
+                        la forma mas rápida y segura</p>
+                    <button type="button" class="btn btn-outline-secondary" id="boton2">Vender mi propiedad</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body carta2">
+                    <img src="assets/img/calidad.png" class="card-title h-25">
+                    <h4 class="card-title mt-3">Encuesta de calidad</h4>
+                    <p class="card-text">Enviá tu opinión sobre la experiencia que viviste con nuestro Staff.</p>
+                    <button type="button" class="btn btn-outline-secondary" id="boton3">Completar encuesta</button>
+                </div>
+            </div>
         </div>
-        <div class="card"> 
-          <div class="card-body carta2">
-            <img src="assets/img/vende.png" class="card-title w-75">
-            <h4 class="card-title">Vende tu propiedad</h4>
-            <p class="card-text mb-4">Contamos con el mejor asesoramiento para que puedas vender tu propiedad de la forma mas rápida y segura</p>
-            <button type="button" class="btn btn-outline-secondary" id="boton2">Vender mi propiedad</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body carta2">
-            <img src="assets/img/calidad.png" class="card-title h-25">
-            <h4 class="card-title mt-3">Encuesta de calidad</h4>
-            <p class="card-text">Enviá tu opinión sobre la experiencia que viviste con nuestro Staff.</p>
-            <button type="button" class="btn btn-outline-secondary" id="boton3">Completar encuesta</button>
-           </div>
-        </div>
-     </div>
     </section>
 
 
-    <footer class="row p-5 bg-secondary text-white">
+<!--Pruebas review clientes-->
+
+<div class="testimonials-clean">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Algunas opiniones</h2>
+            <p class="text-center">Le pedimos a algunos de nuestros clientes que nos cuenten su experiencia con nosotros y esto fue lo que dijeron:</p>
+        </div>
+        <div class="row people">
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">"Gracias a ustedes pude vender mi propiedad mucho mas rapido de lo que esperaba. Excelente atencion y trato humano."</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="./assets/img/cara1.jpg">
+                    <h5 class="name">Claudia Alvarado</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">"Gestionan el alquiler de mi propiedad de manera excelente, no me tengo que preocupar por absolutamente nada."</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="./assets/img/cara2.jpg">
+                    <h5 class="name">Jose Gutierrez</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">"Adquiri mi primer casa a traves de ustedes y tengo que recalcar la excelente atencion y rapidez en todos los tramites necesarios."</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="./assets/img/cara3.jpg">
+                    <h5 class="name">Mauricio Oliva</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <footer class="miFooter row p-5 bg-secondary text-white">
         <div class="col-12 d-none d-lg-block col-lg-4 ">
             <div class="text-center">
                 <a href="index.html"> <img src="assets/img/logo2.png" alt="Logo" class="w-25 pt-4"> </a>
@@ -163,13 +158,23 @@
 
             <div class="row justify-content-between">
                 <div class="col-4">
-                    <a href="https://www.instagram.com/inmobiliariasanmiguel2020" style="visibility: visible;"><ion-icon size="large" style="visibility: visible;" name="logo-instagram" class="w-100 iconos_footer"></ion-icon></a>
+                    <a href="https://www.instagram.com/inmobiliariasanmiguel2020" style="visibility: visible;">
+                        <ion-icon size="large" style="visibility: visible;" name="logo-instagram"
+                            class="w-100 iconos_footer"></ion-icon>
+                    </a>
                 </div>
                 <div class="col-4">
-                    <a href="https://www.facebook.com/San-Miguel-Inmobiliaria-100254688180 789/" style="visibility: visible;"><ion-icon size="large" style="visibility: visible;" name="logo-facebook" class="w-100 iconos_footer"></ion-icon></a>
+                    <a href="https://www.facebook.com/San-Miguel-Inmobiliaria-100254688180 789/"
+                        style="visibility: visible;">
+                        <ion-icon size="large" style="visibility: visible;" name="logo-facebook"
+                            class="w-100 iconos_footer"></ion-icon>
+                    </a>
                 </div>
                 <div class="col-4">
-                    <a href="https://www.web.whatsapp.com" style="visibility: visible;"><ion-icon size="large" style="visibility: visible;" name="logo-whatsapp" class="w-100 iconos_footer"></ion-icon></a>
+                    <a href="https://www.web.whatsapp.com" style="visibility: visible;">
+                        <ion-icon size="large" style="visibility: visible;" name="logo-whatsapp"
+                            class="w-100 iconos_footer"></ion-icon>
+                    </a>
                 </div>
             </div>
         </div>
@@ -182,7 +187,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 
