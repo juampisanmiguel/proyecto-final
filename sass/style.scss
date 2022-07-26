@@ -96,39 +96,6 @@ p{
 }
 
 
-// @media screen and (max-width: 992px) {
-
-//     .card-img-top{
-//         height: 180px;
-//     }
-
-//     #alquiler-tres{
-//         display: none;
-//     }
-
-//     #venta-tres{
-//         display: none;
-//     }
-
-//     #logo-footer{
-//         display: none;
-//     }
-
-//     #p_footer{
-//         display: none;
-//     }
-
-//     #redes-sociales{
-//         display: none;
-//     }
-
-//     #div-links{
-//         margin-bottom: 30px;
-//     }
-// }
-
-//APLICO MIXIN CON CONTENT PARA RESPONSIVE//
-
 .card-img-top{
      @include celular(){
           height: 180px;
@@ -137,7 +104,6 @@ p{
 
 .nav-logo{
     @include celular(){
-        //  margin-left: 85px;
          border-right: none;
        }
 }   
